@@ -5,11 +5,4 @@
     android:orientation="vertical"
     android:background="#f4f4f4" >
 
-    <ListView
-        android:id="@+id/device_list"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        android:choiceMode="singleChoice" />
-
-
 </LinearLayout>

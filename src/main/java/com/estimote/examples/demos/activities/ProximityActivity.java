@@ -77,61 +77,64 @@ public class ProximityActivity extends ActionBarActivity {
                 });
             }
         });
+        int position;
         if (getIntent().getStringExtra(EXTRAS_TARGET_ACTIVITY) != null && adapter.getCount()>=2) {
             try {
                 Class<?> clazz = Class.forName(getIntent().getStringExtra(EXTRAS_TARGET_ACTIVITY));
-                Intent intent = new Intent(ProximityActivity.this, clazz);
-                intent.putExtra(EXTRAS_BEACON, adapter.getItem(Integer.parseInt(getIntent().getStringExtra("Genre"))));
-                startActivity(intent);
+                position = Integer.parseInt((getIntent().getStringExtra("Genre")));
+                dotView = findViewById(R.id.dot);
+                beacon = adapter.getItem(Integer.parseInt(getIntent().getStringExtra("Genre")));
+                /*Intent intent = new Intent(ProximityActivity.this, clazz);
+                intent.putExtra(EXTRAS_BEACON, adapter.getItem(Integer.parseInt(getntent().getStringExtra("Genre"))));
+                startActivity(intent);*/
+                if (beacon == null) {
+                    Toast.makeText(this, "Beacon not found in intent extras", Toast.LENGTH_LONG).show();
+                    finish();
+                    return;
+                }
+                beaconManager = new BeaconManager(this);
+                beaconManager.setRangingListener(new BeaconManager.RangingListener() {
+                    @Override
+                    public void onBeaconsDiscovered(Region region, final List<Beacon> rangedBeacons) {
+                        // Note that results are not delivered on UI thread.
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                // Just in case if there are multiple beacons with the same uuid, major, minor.
+                                Beacon foundBeacon = null;
+                                for (Beacon rangedBeacon : rangedBeacons) {
+                                    if (rangedBeacon.getMacAddress().equals(beacon.getMacAddress())) {
+                                        foundBeacon = rangedBeacon;
+                                    }
+                                }
+                                if (foundBeacon != null) {
+                                    updateDistanceView(foundBeacon);
+                                }
+                            }
+                        });
+                    }
+                });
+
+                final View view = findViewById(R.id.sonar);
+                view.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+                    @Override public void onGlobalLayout() {
+                        view.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+
+                        startY = (int) (RELATIVE_START_POS * view.getMeasuredHeight());
+                        int stopY = (int) (RELATIVE_STOP_POS * view.getMeasuredHeight());
+                        segmentLength = stopY - startY;
+
+                        dotView.setVisibility(View.VISIBLE);
+                        dotView.setTranslationY(computeDotPosY(beacon));
+                    }
+                });
 
             } catch (ClassNotFoundException e) {
                 Log.e(TAG, "Finding class by name failed", e);
             }
         }
-        dotView = findViewById(R.id.dot);
-        beacon = getIntent().getParcelableExtra(ProximityActivity.EXTRAS_BEACON);
-        region = new Region("regionid", beacon.getProximityUUID(), beacon.getMajor(), beacon.getMinor());
-        if (beacon == null) {
-            Toast.makeText(this, "Beacon not found in intent extras", Toast.LENGTH_LONG).show();
-            finish();
-            return;
-        }
-        beaconManager = new BeaconManager(this);
-        beaconManager.setRangingListener(new BeaconManager.RangingListener() {
-            @Override
-            public void onBeaconsDiscovered(Region region, final List<Beacon> rangedBeacons) {
-                // Note that results are not delivered on UI thread.
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        // Just in case if there are multiple beacons with the same uuid, major, minor.
-                        Beacon foundBeacon = null;
-                        for (Beacon rangedBeacon : rangedBeacons) {
-                            if (rangedBeacon.getMacAddress().equals(beacon.getMacAddress())) {
-                                foundBeacon = rangedBeacon;
-                            }
-                        }
-                        if (foundBeacon != null) {
-                            updateDistanceView(foundBeacon);
-                        }
-                    }
-                });
-            }
-        });
 
-        final View view = findViewById(R.id.sonar);
-        view.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-            @Override public void onGlobalLayout() {
-                view.getViewTreeObserver().removeOnGlobalLayoutListener(this);
 
-                startY = (int) (RELATIVE_START_POS * view.getMeasuredHeight());
-                int stopY = (int) (RELATIVE_STOP_POS * view.getMeasuredHeight());
-                segmentLength = stopY - startY;
-
-                dotView.setVisibility(View.VISIBLE);
-                dotView.setTranslationY(computeDotPosY(beacon));
-            }
-        });
     }
 
     private void updateDistanceView(Beacon foundBeacon) {

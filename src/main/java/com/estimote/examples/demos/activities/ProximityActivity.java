@@ -77,7 +77,7 @@ public class ProximityActivity extends ActionBarActivity {
                 });
             }
         });
-        if (getIntent().getStringExtra(EXTRAS_TARGET_ACTIVITY) != null) {
+        if (getIntent().getStringExtra(EXTRAS_TARGET_ACTIVITY) != null && adapter.getCount()>=2) {
             try {
                 Class<?> clazz = Class.forName(getIntent().getStringExtra(EXTRAS_TARGET_ACTIVITY));
                 Intent intent = new Intent(ProximityActivity.this, clazz);

@@ -1,4 +1,11 @@
-How to run demos?
+LIBestimote
+
+The Innovative Library
 =====================
 
-You can easily build it with Gradle by typing `./gradlew installDebug` (or `gradlew.bat installDebug` on Windows) in terminal when your device is connected to computer. If you use [Android Studio](https://developer.android.com/sdk/index.html) you can just simply open build.gradle.
+By using the Estimote Beacon technology and Android Studio, we (Nathan Jiang, Saswata Gupta, Alicia Yu and I) created the LIBestimote at HackWestern 2. 
+
+By integrating the beacons into libraries, we can better allow the users of the libraries to access and navigate the libraries with ease and convenience. 
+
+
+http://devpost.com/software/libestimote

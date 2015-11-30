@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Fantasy Suggestions"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:textSize="60sp"
+        android:id="@+id/sponHeader"
+        android:singleLine="false"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="#FF5000"
+        android:layout_marginTop="30dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@color/tintedorange2"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Lord of the Rings"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/sponHeader"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@color/tintedorange2"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="The Princess Bride"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@color/tintedorange2"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="A Game of Thrones"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@color/tintedorange2"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Star Wars"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

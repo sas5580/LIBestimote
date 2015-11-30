@@ -37,7 +37,7 @@ public class FindBookActivity extends ActionBarActivity {
     private View dotView;
     private int startY = -1;
     private int segmentLength = -1;
-
+    private TextView name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +51,8 @@ public class FindBookActivity extends ActionBarActivity {
             finish();
             return;
         }
-
+        name = (TextView) findViewById(R.id.bookName);
+        name.setText(getIntent().getStringExtra("Name"));
         beaconManager = new BeaconManager(this);
         beaconManager.setRangingListener(new BeaconManager.RangingListener() {
             @Override
@@ -77,7 +78,8 @@ public class FindBookActivity extends ActionBarActivity {
 
         final View view = findViewById(R.id.sonar);
         view.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-            @Override public void onGlobalLayout() {
+            @Override
+            public void onGlobalLayout() {
                 view.getViewTreeObserver().removeOnGlobalLayoutListener(this);
 
                 startY = (int) (RELATIVE_START_POS * view.getMeasuredHeight());
@@ -103,11 +105,11 @@ public class FindBookActivity extends ActionBarActivity {
         double distance = Math.min(Utils.computeAccuracy(beacon), 2.0);
         ////////////////////////////////////
         TextView range = (TextView) findViewById(R.id.outOfRange);
-        if (Utils.computeAccuracy(beacon)>=2.0){
-            range.setText("Out of Range: " + Utils.computeAccuracy(beacon));
+        if (Utils.computeAccuracy(beacon)>=1.0){
+            range.setText(String.format("Out of Range: %.2fm ", Utils.computeAccuracy(beacon)));
         }
         else{
-            range.setText("Within Range: " + Utils.computeAccuracy(beacon));
+            range.setText(String.format("Within Range: %.2fm", Utils.computeAccuracy(beacon)));
         }
         ////////////////////////////////////
         return startY + (int) (segmentLength * (distance / 6.0));

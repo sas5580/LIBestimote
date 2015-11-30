@@ -32,7 +32,7 @@ public class SelectBook extends ActionBarActivity {
     public int genre=0;
     public int book=0;
     public String bookString,genreString;
-    public String[][] books= new String[][] {{"Sherlock Holmes","Detective Conan"},{"Twilight","Drama2"},{"Steve Jobs","Genghis Khan"},{"Justin Trudeau","Vladimir Putin"},{"World History","American History"}};
+    public String[][] books= new String[][] {{"Sherlock Holmes","Detective Conan"},{"Twilight","Hunger Games"},{"Steve Jobs","Genghis Khan"},{"Justin Trudeau","Vladimir Putin"},{"World History","American History"}};
     public String[] genres= new String[] { "Mystery","Drama", "Biography","Autobiography","History"};
 
     //public Button genreButton;
@@ -98,6 +98,7 @@ public class SelectBook extends ActionBarActivity {
                 book = position;
                 Intent intent = new Intent("com.estimote.examples.demos.activities.PROXIMITYACTIVITY");
                 intent.putExtra("Genre",""+genre);
+                intent.putExtra("Name",bookString);
                 intent.putExtra(SelectBook.EXTRAS_TARGET_ACTIVITY, FindBookActivity.class.getName());
                 startActivity(intent);
 

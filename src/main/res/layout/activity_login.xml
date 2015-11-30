@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/white">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:inputType="textEmailAddress"
+        android:hint= "enter email"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:background="@color/tintedorange"
+        android:textColorHint="@color/white"
+        android:gravity="center"
+
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:textColorHint="@color/white"
+        android:layout_height="80dp"
+        android:inputType="textPassword"
+        android:hint="enter password"
+        android:background="@color/tintedorange"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_row="14"
+        android:layout_column="0"
+        android:gravity="center"
+        android:layout_marginBottom="55dp"
+        android:layout_above="@+id/signInButton"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:id="@+id/signInButton"
+        android:background="@color/orange"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:text="Log In"
+        android:background="@color/orange"
+        android:id="@+id/textView3"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="100sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

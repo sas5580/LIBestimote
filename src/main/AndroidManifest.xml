@@ -20,20 +20,56 @@
   <!-- Declaration that this app is usable on phones with Bluetooth Low Energy. -->
   <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
 
-  <application
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-feature android:name="android.hardware.camera2"></uses-feature>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+
+    <application
       android:name=".DemosApplication"
-      android:label="Estimote Demos"
+      android:label="LIBestimote"
+        android:logo="@drawable/logo"
       android:theme="@style/EstimoteTheme">
 
     <activity
+        android:name=".activities.LoginActivity"
+        android:label="LIBestimote"
+        android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        <activity android:name=".activities.SplashScreen"
+            android:label="Splash Screen"
+            android:screenOrientation="portrait">
+            <intent-filler>
+                <action android:name="com.estimote.examples.demos.activities.SPLASHSCREEN" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filler>
+        </activity>
+    </activity>
+
+        <activity android:name=".activities.ProxCheck">
+            <intent-filter>
+                <action android:name="android.intent.action.PROXCHECK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
         android:name=".activities.MainActivity"
-        android:label="LibrEstimote"
+        android:label="LIBestimote"
         android:screenOrientation="portrait">
       <intent-filter>
-        <action android:name="android.intent.action.MAIN"/>
-        <category android:name="android.intent.category.LAUNCHER"/>
+        <action android:name="android.intent.action.MAINACTIVITY"/>
+        <category android:name="android.intent.category.DEFAULT"/>
       </intent-filter>
     </activity>
+
+
 
     <activity
         android:name=".activities.ProximityActivity"
@@ -54,16 +90,14 @@
               <category android:name="android.intent.category.DEFAULT" />
           </intent-filter>
       </activity>
-
-    <activity android:name=".activities.NotifyDemoActivity"
-              android:label="Notify Demo"
-              android:screenOrientation="portrait">
-        <intent-filter>
-            <action android:name="com.estimote.examples.demos.activities.NOTIFYDEMOACTIVITY" />
-            <category android:name="android.intent.category.DEFAULT" />
-        </intent-filter>
-    </activity>
-
+        <activity android:name=".activities.SuggestedActivity"
+            android:label="Suggested Activity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.estimote.examples.demos.activities.SUGGESTEDACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
       <activity android:name=".activities.SelectBook"
               android:label="Select Book"
               android:screenOrientation="portrait">
@@ -72,6 +106,34 @@
               <category android:name="android.intent.category.DEFAULT" />
           </intent-filter>
       </activity>
+
+      <activity android:name=".activities.DisActivity"
+          android:label="Discover Activity 2"
+          android:screenOrientation="portrait">
+          <intent-filler>
+              <action android:name="com.estimote.examples.demos.activities.DISACTIVITY" />
+              <category android:name="android.intent.category.DEFAULT"/>
+          </intent-filler>
+      </activity>
+
+      <activity android:name=".activities.DiscoverActivity"
+          android:label="Discover Activity"
+          android:screenOrientation="portrait">
+          <intent-filler>
+              <action android:name="com.estimote.examples.demos.activities.DISCOVERACTIVITY" />
+              <category android:name="android.intent.category.DEFAULT"/>
+          </intent-filler>
+      </activity>
+
+      <activity android:name=".activities.HarryActivity"
+          android:label="Harry Activity"
+          android:screenOrientation="portrait">
+          <intent-filler>
+              <action android:name="com.estimote.examples.demos.activities.HARRYACTIVITY" />
+              <category android:name="android.intent.category.DEFAULT"/>
+          </intent-filler>
+      </activity>
+
 
       <!--
       There is no need any longer to declare BeaconService. It is declared in SDK's AndroidManifest.xml

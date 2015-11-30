@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:2:1-85:12
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:2:1-147:12
 	xmlns:android
 		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:2:11-69
 	package
@@ -34,95 +34,179 @@ MERGED from [:estimote-sdk:] C:\Users\abc96_000\Desktop\diana\Android-SDK-master
 		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:21:62-85
 	android:name
 		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:21:17-61
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:23:5-71
+	android:name
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:23:22-68
+uses-permission#android.permission.READ_PROFILE
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:24:5-71
+	android:name
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:24:22-68
+uses-permission#android.permission.READ_CONTACTS
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:25:5-72
+	android:name
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:25:22-69
+uses-feature#android.hardware.camera2
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:26:5-74
+	android:name
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:26:19-58
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:27:5-97
+	android:name
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:27:22-78
 application
-ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:23:3-83:17
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:30:5-145:17
 MERGED from [:estimote-sdk:] C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\build\intermediates\exploded-aar\estimote-sdk\AndroidManifest.xml:22:5-32:19
 MERGED from [com.android.support:appcompat-v7:23.1.0] C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.0] C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:22:5-20
 	android:label
-		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:25:7-37
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:32:7-34
 	android:theme
-		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:26:7-43
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:34:7-43
 	android:name
-		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:24:7-39
-activity#com.estimote.examples.demos.activities.MainActivity
-ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:28:5-36:16
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:31:7-39
+	android:logo
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:33:9-38
+activity#com.estimote.examples.demos.activities.LoginActivity
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:36:5-52:16
 	android:screenOrientation
-		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:31:9-45
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:39:9-45
 	android:label
-		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:30:9-37
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:38:9-36
 	android:name
-		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:29:9-48
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:37:9-49
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:32:7-35:23
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:40:9-43:25
 action#android.intent.action.MAIN
-ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:33:9-60
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:41:13-65
 	android:name
-		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:33:17-58
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:41:21-62
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:34:9-68
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:42:13-73
 	android:name
-		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:34:19-66
-activity#com.estimote.examples.demos.activities.ProximityActivity
-ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:38:5-46:16
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:42:23-70
+activity#com.estimote.examples.demos.activities.SplashScreen
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:44:9-51:20
 	android:screenOrientation
-		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:41:9-45
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:46:13-49
 	android:label
-		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:40:9-41
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:45:13-42
 	android:name
-		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:39:9-53
-intent-filter#android.intent.category.DEFAULT+com.estimote.examples.demos.activities.PROXIMITYACTIVITY
-ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:42:9-45:25
-action#com.estimote.examples.demos.activities.PROXIMITYACTIVITY
-ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:43:13-95
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:44:19-58
+intent-filler
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:47:13-50:29
+action#com.estimote.examples.demos.activities.SPLASHSCREEN
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:48:17-94
 	android:name
-		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:43:21-92
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:48:25-91
 category#android.intent.category.DEFAULT
-ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:44:13-72
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:49:17-75
 	android:name
-		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:44:23-69
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:49:27-73
+activity#com.estimote.examples.demos.activities.ProxCheck
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:54:9-60:20
+	android:name
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:54:19-55
+intent-filter#android.intent.action.PROXCHECK+android.intent.category.DEFAULT
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:55:13-59:29
+action#android.intent.action.PROXCHECK
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:56:17-74
+	android:name
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:56:25-71
+activity#com.estimote.examples.demos.activities.MainActivity
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:62:9-70:16
+	android:screenOrientation
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:65:9-45
+	android:label
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:64:9-36
+	android:name
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:63:9-48
+intent-filter#android.intent.action.MAINACTIVITY+android.intent.category.DEFAULT
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:66:7-69:23
+action#android.intent.action.MAINACTIVITY
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:67:9-68
+	android:name
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:67:17-66
+activity#com.estimote.examples.demos.activities.ProximityActivity
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:74:5-82:16
+	android:screenOrientation
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:77:9-45
+	android:label
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:76:9-41
+	android:name
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:75:9-53
+intent-filter#android.intent.category.DEFAULT+com.estimote.examples.demos.activities.PROXIMITYACTIVITY
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:78:9-81:25
+action#com.estimote.examples.demos.activities.PROXIMITYACTIVITY
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:79:13-95
+	android:name
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:79:21-92
 activity#com.estimote.examples.demos.activities.FindBookActivity
-ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:49:7-56:18
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:85:7-92:18
 	android:screenOrientation
-		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:51:15-51
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:87:15-51
 	android:label
-		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:50:15-44
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:86:15-44
 	android:name
-		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:49:17-60
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:85:17-60
 intent-filter#android.intent.category.DEFAULT+com.estimote.examples.demos.activities.FINDBOOKACTIVITY
-ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:52:11-55:27
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:88:11-91:27
 action#com.estimote.examples.demos.activities.FINDBOOKACTIVITY
-ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:53:15-96
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:89:15-96
 	android:name
-		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:53:23-93
-activity#com.estimote.examples.demos.activities.NotifyDemoActivity
-ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:58:5-65:16
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:89:23-93
+activity#com.estimote.examples.demos.activities.SuggestedActivity
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:93:9-100:20
 	android:screenOrientation
-		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:60:15-51
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:95:13-49
 	android:label
-		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:59:15-42
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:94:13-47
 	android:name
-		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:58:15-60
-intent-filter#android.intent.category.DEFAULT+com.estimote.examples.demos.activities.NOTIFYDEMOACTIVITY
-ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:61:9-64:25
-action#com.estimote.examples.demos.activities.NOTIFYDEMOACTIVITY
-ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:62:13-96
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:93:19-63
+intent-filter#android.intent.category.DEFAULT+com.estimote.examples.demos.activities.SUGGESTEDACTIVITY
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:96:13-99:29
+action#com.estimote.examples.demos.activities.SUGGESTEDACTIVITY
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:97:17-99
 	android:name
-		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:62:21-93
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:97:25-96
 activity#com.estimote.examples.demos.activities.SelectBook
-ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:67:7-74:18
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:101:7-108:18
 	android:screenOrientation
-		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:69:15-51
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:103:15-51
 	android:label
-		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:68:15-42
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:102:15-42
 	android:name
-		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:67:17-54
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:101:17-54
 intent-filter#android.intent.category.DEFAULT+com.estimote.examples.demos.activities.SELECTBOOK
-ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:70:11-73:27
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:104:11-107:27
 action#com.estimote.examples.demos.activities.SELECTBOOK
-ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:71:15-90
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:105:15-90
 	android:name
-		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:71:23-87
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:105:23-87
+activity#com.estimote.examples.demos.activities.DisActivity
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:110:7-117:18
+	android:screenOrientation
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:112:11-47
+	android:label
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:111:11-46
+	android:name
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:110:17-55
+activity#com.estimote.examples.demos.activities.DiscoverActivity
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:119:7-126:18
+	android:screenOrientation
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:121:11-47
+	android:label
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:120:11-44
+	android:name
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:119:17-60
+activity#com.estimote.examples.demos.activities.HarryActivity
+ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:128:7-135:18
+	android:screenOrientation
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:130:11-47
+	android:label
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:129:11-41
+	android:name
+		ADDED from C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\src\main\AndroidManifest.xml:128:17-57
 uses-permission#android.permission.BLUETOOTH_ADMIN
 ADDED from [:estimote-sdk:] C:\Users\abc96_000\Desktop\diana\Android-SDK-master\Android-SDK-LibrEstimote\Android-SDK-master\LibrEstimote\build\intermediates\exploded-aar\estimote-sdk\AndroidManifest.xml:11:5-74
 	android:name

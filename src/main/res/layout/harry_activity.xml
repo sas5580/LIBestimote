@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Oryx and Crake"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:textSize="30sp"
+        android:id="@+id/sponHeader"
+        android:singleLine="false"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="#FF5000"
+        android:layout_marginBottom="40dp"/>
+    <View android:id="@+id/fakeView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/fakeView"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/spon"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/book1"
+        android:layout_marginTop="70dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/fakeView"
+        android:layout_alignParentRight="true"
+        android:id="@+id/spon0"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentTop="true"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/spon1"
+        android:layout_toEndOf="@+id/spon1"
+        android:text="Author:\nMargaret Atwood\n\nPublishing Year:\n2003\n\nAvalibility:\nOn Shelves"
+        android:layout_weight="1"
+        android:textColor="#000000" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/fakeView"
+        android:layout_alignRight="@+id/spon0"
+        android:layout_alignEnd="@+id/spon0"
+        android:text="Check Out"
+        android:background="#E1A477" />
+
+</RelativeLayout>

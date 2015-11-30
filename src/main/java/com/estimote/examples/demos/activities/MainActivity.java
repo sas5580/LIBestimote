@@ -11,9 +11,10 @@ import android.widget.Button;
 import com.estimote.examples.demos.R;
 
 public class MainActivity extends ActionBarActivity{
-  Button distanceButton;
+  Button signoutButton;
   Button bookButton;
   Button discoverButton;
+  Button logoutButton;
     int genrePos,bookPos;
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -28,14 +29,31 @@ public class MainActivity extends ActionBarActivity{
         Intent intent = new Intent("com.estimote.examples.demos.activities.SELECTBOOK");
         startActivity(intent);
       }
-    });/*
-    discoverButton = (Button)findViewById(R.id.notify_button);
+    });
+    discoverButton = (Button)findViewById(R.id.discover_button);
     discoverButton.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        startListBeaconsActivity(NotifyDemoActivity.class.getName());
+        Intent intent = new Intent(MainActivity.this, SuggestedActivity.class);
+        startActivity(intent);
       }
-    });*/
+    });
+    signoutButton = (Button)findViewById(R.id.notify_button);
+    signoutButton.setOnClickListener(new View.OnClickListener(){
+      @Override
+      public void onClick(View v){
+        Intent intent = new Intent(MainActivity.this, ProxCheck.class);
+        startActivity(intent);
+      }
+    });
+    logoutButton = (Button)findViewById(R.id.sign_out);
+    logoutButton.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+        startActivity(intent);
+      }
+    });
   }
 
   private void startListBeaconsActivity(String extra) {

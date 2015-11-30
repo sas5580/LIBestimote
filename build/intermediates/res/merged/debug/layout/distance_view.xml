@@ -26,9 +26,20 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="68dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Within Range"
         android:id="@+id/outOfRange"
-        android:layout_gravity="center_horizontal|bottom" />
+        android:layout_gravity="center_horizontal|bottom"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Book Name"
+        android:gravity="center"
+        android:id="@+id/bookName"
+        android:layout_gravity="center_horizontal|top" />
+
 
 </FrameLayout><!-- From: file:/C:/Users/abc96_000/Desktop/diana/Android-SDK-master/Android-SDK-LibrEstimote/Android-SDK-master/LibrEstimote/src/main/res/layout/distance_view.xml -->

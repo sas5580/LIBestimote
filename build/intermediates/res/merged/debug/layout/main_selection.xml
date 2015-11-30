@@ -1,34 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical" android:background="@color/white">
 
 
     <ListView
         android:id="@+id/genreChoices"
-        android:layout_height="354dp"
-        android:layout_width="184dp"
+        android:layout_height="match_parent"
+        android:layout_width="180dp"
         android:choiceMode="singleChoice"
         android:layout_gravity="left"
-        android:layout_row="0"
-        android:layout_column="1" />
+        android:background="@color/tintedorange2"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_below="@+id/textView4"
+        android:layout_margin="0dp" />
 
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="GENRE"
+        android:background="@color/orange"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/genreChoices"
+        android:layout_alignEnd="@+id/genreChoices" />
+    <TextView
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:textSize="40dp"
+        android:background="@color/orange"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="NAME"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/bookChoices"
+        android:layout_alignEnd="@+id/bookChoices" />
     <ListView
         android:id="@+id/bookChoices"
-        android:layout_height="354dp"
-        android:layout_width="184dp"
+        android:layout_height="match_parent"
+        android:background="@color/tintedorange2"
+        android:layout_width="180dp"
         android:choiceMode="singleChoice"
         android:layout_gravity="right"
-        android:layout_row="0"
-        android:layout_column="2" />
 
-    <Button
-        android:layout_width="79dp"
-        android:layout_height="27dp"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_gravity="bottom"
-        android:gravity="bottom"/>
-</GridLayout>
+        android:layout_row="1"
+        android:layout_column="2"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView4" />
+
+</RelativeLayout>
 <!-- From: file:/C:/Users/abc96_000/Desktop/diana/Android-SDK-master/Android-SDK-LibrEstimote/Android-SDK-master/LibrEstimote/src/main/res/layout/main_selection.xml -->

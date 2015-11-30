@@ -25,6 +25,13 @@
         android:name="android.hardware.bluetooth_le"
         android:required="true" />
 
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-feature android:name="android.hardware.camera2" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
  <!-- Needed for Bluetooth scanning on Android M and above. -->
     <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -34,16 +41,45 @@
 
     <application
         android:name="com.estimote.examples.demos.DemosApplication"
-        android:label="Estimote Demos"
+        android:label="LIBestimote"
+        android:logo="@drawable/logo"
         android:theme="@style/EstimoteTheme" >
         <activity
-            android:name="com.estimote.examples.demos.activities.MainActivity"
-            android:label="LibrEstimote"
+            android:name="com.estimote.examples.demos.activities.LoginActivity"
+            android:label="LIBestimote"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <activity
+                android:name="com.estimote.examples.demos.activities.SplashScreen"
+                android:label="Splash Screen"
+                android:screenOrientation="portrait" >
+                <intent-filler>
+                    <action android:name="com.estimote.examples.demos.activities.SPLASHSCREEN" />
+
+                    <category android:name="android.intent.category.DEFAULT" />
+                </intent-filler>
+            </activity>
+        </activity>
+        <activity android:name="com.estimote.examples.demos.activities.ProxCheck" >
+            <intent-filter>
+                <action android:name="android.intent.action.PROXCHECK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.estimote.examples.demos.activities.MainActivity"
+            android:label="LIBestimote"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
@@ -67,11 +103,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.estimote.examples.demos.activities.NotifyDemoActivity"
-            android:label="Notify Demo"
+            android:name="com.estimote.examples.demos.activities.SuggestedActivity"
+            android:label="Suggested Activity"
             android:screenOrientation="portrait" >
             <intent-filter>
-                <action android:name="com.estimote.examples.demos.activities.NOTIFYDEMOACTIVITY" />
+                <action android:name="com.estimote.examples.demos.activities.SUGGESTEDACTIVITY" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -85,6 +121,36 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.estimote.examples.demos.activities.DisActivity"
+            android:label="Discover Activity 2"
+            android:screenOrientation="portrait" >
+            <intent-filler>
+                <action android:name="com.estimote.examples.demos.activities.DISACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filler>
+        </activity>
+        <activity
+            android:name="com.estimote.examples.demos.activities.DiscoverActivity"
+            android:label="Discover Activity"
+            android:screenOrientation="portrait" >
+            <intent-filler>
+                <action android:name="com.estimote.examples.demos.activities.DISCOVERACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filler>
+        </activity>
+        <activity
+            android:name="com.estimote.examples.demos.activities.HarryActivity"
+            android:label="Harry Activity"
+            android:screenOrientation="portrait" >
+            <intent-filler>
+                <action android:name="com.estimote.examples.demos.activities.HARRYACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filler>
         </activity>
 
         <!--

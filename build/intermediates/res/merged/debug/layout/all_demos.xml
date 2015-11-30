@@ -1,37 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:weightSum="1"
     >
 
   <include layout="@layout/toolbar" android:id="@+id/toolbar" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:textSize="50dp"
+        android:text="Welcome!"
+        android:textColor="@color/white"
 
+        android:background="@color/tintedorange2"
+        android:gravity="center"
+        android:id="@+id/textView"
+
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/fakeView"
+        android:layout_centerInParent="true"/>
   <Button
-      android:id="@+id/distance_button"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="6dp"
-      android:layout_marginLeft="8dp"
-      android:layout_marginRight="8dp"
-      android:text="Distance Demo"
-      />
+      android:id="@+id/discover_button"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:background="@color/tintedorange"
+      android:textColor="@color/white"
+      android:textSize="20dp"
+      android:text="Discover"
+      android:layout_above="@+id/notify_button"
+      android:layout_alignParentStart="true"
+      android:layout_toStartOf="@+id/fakeView" />
 
   <Button
       android:id="@+id/select_book_button"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginLeft="8dp"
-      android:layout_marginRight="8dp"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:textSize="20dp"
       android:text="Select Book"
-      />
+      android:layout_alignTop="@+id/discover_button"
+      android:background="@color/tintedorange"
+      android:textColor="@color/white"
+      android:layout_alignParentEnd="true"
+      android:layout_toEndOf="@+id/discover_button" />
     <Button
         android:id="@+id/notify_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:text="Notify"
-        />
-</LinearLayout><!-- From: file:/C:/Users/abc96_000/Desktop/diana/Android-SDK-master/Android-SDK-LibrEstimote/Android-SDK-master/LibrEstimote/src/main/res/layout/all_demos.xml -->
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@color/tintedorange"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="Sign Out Items"
+
+        android:layout_alignTop="@+id/sign_out"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/select_book_button" />
+    <Button
+        android:id="@+id/sign_out"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@color/tintedorange"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="Log Out"
+        android:layout_below="@+id/fakeView"
+        android:layout_alignEnd="@+id/select_book_button"
+        android:layout_marginTop="46dp"
+        android:layout_toEndOf="@+id/fakeView" />
+
+</RelativeLayout><!-- From: file:/C:/Users/abc96_000/Desktop/diana/Android-SDK-master/Android-SDK-LibrEstimote/Android-SDK-master/LibrEstimote/src/main/res/layout/all_demos.xml -->
